@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_base_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/lay_base_left"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/eq_reset"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_base_device"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:minHeight="50dp">
+
+                <TextView
+                    android:id="@+id/tv_base_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxWidth="180dp"
+                    android:maxLength="24"
+                    android:singleLine="true"
+                    android:text="@string/eq_title"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_base_right"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_comfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/eq_comfirm"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:orientation="horizontal">
+
+            <com.cchip.eq.NumberPickerView
+                android:id="@+id/numberpicker_eq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/numberpickerview_bg"
+                app:npv_DividerColor="@color/numberpicker_divider"
+                app:npv_Orientation="horizontal"
+                app:npv_ShowCount="5"
+                app:npv_ShowDivider="false"
+                app:npv_TextArray="@array/eq_text"
+                app:npv_TextColorNormal="@color/numberpicker_norml"
+                app:npv_TextColorSelected="@color/numberpicker_selected"
+                app:npv_TextSizeNormal="18sp"
+                app:npv_TextSizeSelected="20sp"
+                app:npv_WrapSelectorWheel="true" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:descendantFocusability="blocksDescendants">
+
+            <com.cchip.eq.CustomRecyclerView
+                android:id="@+id/recyclerview_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:overScrollMode="never">
+
+            </com.cchip.eq.CustomRecyclerView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:1:1-11:12
+	package
+		ADDED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:3:5-31
+		INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml
+		INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml
+		ADDED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:1:1-11:12
+		INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:2:5-51
+	android:versionCode
+		INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml
+		ADDED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:1:1-11:12
+		INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:5:5-9:19
+	android:supportsRtl
+		ADDED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:6:18-44
+	android:label
+		ADDED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:5:45-77
+	android:allowBackup
+		ADDED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:5:18-44
+	tools:replace
+		ADDED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml:7:9-44
+uses-sdk
+INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml
+INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml
+INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml
+INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml
+		ADDED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml
+		INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml
+		ADDED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml
+		INJECTED from D:\cxjas_github\ViewUtilMode\lib_EQ\src\main\AndroidManifest.xml

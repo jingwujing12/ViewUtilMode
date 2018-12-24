@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ViewUtilMode</string>
+
+    <!-- eq -->
+    <string name="eq_reset">重置</string>
+    <string name="eq_title">均衡器</string>
+    <string name="eq_comfirm">完成</string>
+    <string name="eq_close">关闭</string>
+</resources>

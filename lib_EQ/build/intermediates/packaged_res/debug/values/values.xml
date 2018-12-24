@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#8876d3f0</color>
+    <color name="center_background">#387892</color>
+    <color name="eq_horizontal_center_line">#76d3f0</color>
+    <color name="eq_other_line">#76d3f0</color>
+    <color name="eq_vertical_center_line">#dfff00</color>
+    <color name="textcolor">#004964</color>
+    <declare-styleable name="NumberPickerView">
+        <!--set number of item displayed, default is 3-->
+        <attr format="reference|integer" name="npv_ShowCount"/>
+        <!--set if show divider, default is true-->
+        <attr format="reference|boolean" name="npv_ShowDivider"/>
+        <attr format="reference|color" name="npv_DividerColor"/>
+        <attr format="reference|dimension" name="npv_DividerMarginLeft"/>
+        <attr format="reference|dimension" name="npv_DividerMarginRight"/>
+        <attr format="reference|dimension" name="npv_DividerHeight"/>
+        <attr format="reference|color" name="npv_TextColorNormal"/>
+        <attr format="reference|color" name="npv_TextColorSelected"/>
+        <attr format="reference|color" name="npv_TextColorHint"/>
+        <attr format="reference|dimension" name="npv_TextSizeNormal"/>
+        <attr format="reference|dimension" name="npv_TextSizeSelected"/>
+        <attr format="reference|dimension" name="npv_TextSizeHint"/>
+        <attr format="reference" name="npv_TextArray"/>
+        <attr format="reference|integer" name="npv_MinValue"/>
+        <attr format="reference|integer" name="npv_MaxValue"/>
+        <attr format="reference|boolean" name="npv_WrapSelectorWheel"/>
+        <attr format="reference|boolean" name="npv_RespondChangeOnDetached"/>
+        <attr format="reference|string" name="npv_HintText"/>
+        <attr format="reference|string" name="npv_EmptyItemHint"/>
+        <attr format="reference|dimension" name="npv_MarginStartOfHint"/>
+        <attr format="reference|dimension" name="npv_MarginEndOfHint"/>
+        <attr format="reference|dimension" name="npv_ItemPaddingHorizontal"/>
+        <attr format="reference|dimension" name="npv_ItemPaddingVertical"/>
+        <attr format="reference|boolean" name="npv_RespondChangeInMainThread"/>
+        <attr name="npv_Orientation">
+            <!-- Defines an horizontal widget. -->
+            <enum name="horizontal" value="0"/>
+            <!-- Defines a vertical widget. -->
+            <enum name="vertical" value="1"/>
+        </attr>
+        <!--just used to measure maxWidth for wrap_content without hint,
+            the string array will never be displayed.
+            you can set this attr if you want to keep the wraped numberpickerview
+            width unchanged when alter the content list-->
+        <attr format="reference" name="npv_AlternativeTextArrayWithMeasureHint"/>
+        <attr format="reference" name="npv_AlternativeTextArrayWithoutMeasureHint"/>
+        <!--the max length of hint content-->
+        <attr format="reference|string" name="npv_AlternativeHint"/>
+    </declare-styleable>
+    <string name="app_name">Lib_eq</string>
+</resources>

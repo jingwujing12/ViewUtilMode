@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="numberpickerview_bg">#8876d3f0</color>
+    <color name="numberpicker_divider">#4dc1c1c1</color>
+    <color name="numberpicker_norml">#166380</color>
+    <color name="numberpicker_selected">#dffF00</color>
+
+    <color name="time_seek_bg">#9cb4b9</color>
+    <color name="time_seek_bg_un_select">#339cb4b9</color>
+    <color name="time_alarm_seek_bg">#dffF00</color>
+    <color name="time_alarm_seek_bg_un_select">#33bbd8df</color>
+    <color name="time_unselect_seek_bg">#33bbd8df</color>
+</resources>

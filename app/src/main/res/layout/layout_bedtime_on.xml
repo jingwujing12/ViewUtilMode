@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lin_time_on"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15.8dp"
+        android:paddingBottom="12.4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bedtime_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bedtime_icon_and_word_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_bedtime_end_time"
+                android:gravity="center_vertical"
+                android:letterSpacing="-0.02"
+                android:textColor="@color/bedtime_text_selector"
+                android:lineSpacingExtra="3sp"
+                android:text="00:00 AM" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_bedtime_start_time"
+                android:drawableLeft="@drawable/duration_start_selector"
+                android:drawablePadding="3dp"
+                android:textColor="@color/bedtime_text_selector"
+                android:gravity="center"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="4sp"
+                android:text="00:00 AM" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/sleep_sound_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sleep_sound_icon_and_word_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_sleep_sound_start_time"
+                android:gravity="center_vertical"
+                android:letterSpacing="-0.02"
+                android:textColor="@color/bedtime_text_selector"
+                android:lineSpacingExtra="3sp"
+                android:text="00:00 AM" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_sleep_sound_end_time"
+                android:drawableLeft="@drawable/sound_end_selector"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:letterSpacing="-0.02"
+                android:textColor="@color/bedtime_text_selector"
+                android:lineSpacingExtra="4sp"
+                android:text="00:00 AM" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/wake_up_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wake_up_icon_and_word_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_wake_up_end_time"
+                android:gravity="center_vertical"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="3sp"
+                android:textColor="@color/bedtime_text_selector"
+                android:text="00:00 AM" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_wake_up_start_time"
+                android:drawableLeft="@drawable/duration_start_selector"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:textColor="@color/bedtime_text_selector"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="4sp"
+                android:text="00:00 AM" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="383.8dp">
+
+        <io.feeeei.circleseekbar.CircleSeekBar
+            android:id="@+id/seek_sleep"
+            android:layout_width="330dp"
+            android:layout_height="330dp"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            app:wheel_end_drawable_select="@drawable/sleep_sound_end_on"
+            app:wheel_start_drawable_select="@drawable/sleep_sound_start_on"
+            app:wheel_end_drawable="@drawable/sleep_sound_end_off"
+            app:wheel_gap_process="5"
+            app:wheel_max_end_process="720"
+            app:wheel_max_start_process="720"
+            app:wheel_pointer_color="@color/time_seek_bg"
+            app:wheel_pointer_radius="8dp"
+            app:wheel_reached_color="@color/time_seek_bg_un_select"
+            app:wheel_reached_width="10dp"
+            app:wheel_reached_color_select="@color/time_alarm_seek_bg"
+            app:wheel_start_drawable="@drawable/sleep_sound_start_off"
+            app:wheel_unreached_color="@color/time_unselect_seek_bg"
+            app:wheel_unreached_width="10dp" />
+
+        <io.feeeei.circleseekbar.CircleOutSizeClockSeekBar
+            android:id="@+id/circle_clock_seek"
+            android:layout_width="236dp"
+            android:layout_height="236dp"
+            app:wheel_gap_process="5"
+            app:wheel_max_end_process="720"
+            app:wheel_max_start_process="720"
+            android:layout_centerInParent="true"
+            app:wheel_center_background_drawable="@drawable/time"
+            app:wheel_center_end_drawable="@drawable/duration_set_button_off"
+            app:wheel_center_end_drawable_select="@drawable/duration_set_button_on"
+            app:wheel_center_start_drawable="@drawable/duration_set_button_off"
+            app:wheel_center_start_drawable_select="@drawable/duration_set_button_on"
+            app:wheel_end_drawable="@drawable/wake_up_set_button_off"
+            app:wheel_end_drawable_select="@drawable/wake_up_set_button_on"
+            app:wheel_max_process="11"
+            app:wheel_reached_color="@color/time_seek_bg_un_select"
+            app:wheel_reached_color_end_normal="@color/time_seek_bg_un_select"
+            app:wheel_reached_color_end_select="@color/time_seek_bg"
+            app:wheel_reached_color_select="@color/time_alarm_seek_bg"
+            app:wheel_reached_color_start_normal="@color/time_seek_bg_un_select"
+            app:wheel_reached_color_start_select="@color/time_seek_bg"
+            app:wheel_reached_width="32dp"
+            app:wheel_start_drawable="@drawable/bedtime_set_button_off"
+            app:wheel_start_drawable_select="@drawable/bedtime_set_button_on"
+            app:wheel_unreached_color="@color/time_unselect_seek_bg" />
+    </RelativeLayout>
+</LinearLayout>

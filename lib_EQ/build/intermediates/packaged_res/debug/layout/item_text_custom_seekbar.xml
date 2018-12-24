@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/seekbar_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_add_seekbar" />
+    <!--android:background="@drawable/bg_custom_seekbar"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/seekbar_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="20dp"
+            android:background="@drawable/bg_tv_progress"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="#004964"
+            android:textSize="11sp" />
+
+        <com.cchip.eq.CustomSeekBar
+            android:id="@+id/custom_seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/background" />
+
+        <TextView
+            android:id="@+id/frequency"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/bg_tv_frequency"
+            android:gravity="center"
+            android:text="25k"
+            android:textColor="#004964"
+            android:textSize="11sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/seekbar_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_sub_seekbar" />
+
+
+</LinearLayout>

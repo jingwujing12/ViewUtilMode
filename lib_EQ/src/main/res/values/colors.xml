@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="eq_horizontal_center_line">#76d3f0</color>
+    <color name="eq_vertical_center_line">#dfff00</color>
+    <color name="eq_other_line">#76d3f0</color>
+    <color name="textcolor">#004964</color>
+    <color name="center_background">#387892</color>
+    <color name="background">#8876d3f0</color>
+</resources>
